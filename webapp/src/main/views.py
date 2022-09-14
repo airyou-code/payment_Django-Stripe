@@ -4,7 +4,7 @@ from django.conf import settings
 from django.shortcuts import render
 from django.views import View
 from django.conf import settings
-from .models import Item
+from item.models import Item
 
 import stripe
 import json
@@ -21,35 +21,5 @@ class CancelView(TemplateView):
 def item(request, pk):
     product = Item.objects.get(id=pk)
     return render(request, 'main/item.html', {'item':product, 'STRIPE_SECRET_KEY':settings.STRIPE_PUBLISH_KEY})
-
-def buy(request, pk):
-    product = Item.objects.get(id=pk)
-    checkout_session = stripe.checkout.Session.create(
-        payment_method_types=['card'],
-        line_items=[
-            {
-                'price_data': {
-                    'currency': 'usd',
-                    'unit_amount': product.price,
-                    'product_data': {
-                        'name': product.name,
-                        # 'images': ['https://i.imgur.com/EHyR2nP.png'],
-                    },
-                },
-                'quantity': 1,
-            },
-        ],
-        metadata={
-            "product_id": product.id
-        },
-        mode='payment',
-        success_url=DOMAIN + '/success/',
-        cancel_url=DOMAIN + '/cancel/',
-    )
-    return JsonResponse({
-        'id': checkout_session.id
-    })
-    # product = Item.objects.get(id=pk)
-    pass
 
 
