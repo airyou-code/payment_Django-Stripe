@@ -11,4 +11,5 @@ webapp/src/item/api/__pycache__
 webapp/src/db.sqlite3
 webapp/src/webapp/__pycache__/settings.cpython-310.pyc
 webapp/src/webapp/__pycache__/__init__.cpython-310.pyc
+webapp/src/item/migrations/0001_initial.py
 webapp/src/__pycache__
