@@ -75,11 +75,11 @@ to pay for the selected Item or Order
 - `GET http://127.0.0.1:8000/api/buyorder/{id}`
 
 ## HTML response
-Response with the help of which you can get a simple HTML page with information about the selected Item and a Buy button.
+Request with the help of which you can get a simple HTML page with information about the selected Item and a Buy button.
 By clicking on the Buy button, a request for api/buy/{id} should occur, session_id should be obtained, and then a redirect to the Checkout form stripe should occur using the Stripe JS library.redirectToCheckout(SessionID=session_id)
 - `GET http://127.0.0.1:8000/item/{id}`
 
-Response with the help of which you can get a simple HTML page with information about the selected Order and a Buy button.
+Request with the help of which you can get a simple HTML page with information about the selected Order and a Buy button.
 By clicking on the Buy button, a request for api/buyorder/{id} should occur, session_id should be obtained, and then a redirect to the Checkout form stripe should occur using the Stripe JS library.redirectToCheckout(SessionID=session_id)
 
 - `GET http://127.0.0.1:8000/order/{id}`
