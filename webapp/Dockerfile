@@ -8,5 +8,6 @@ COPY ./requirements.txt ./
 RUN pip install -r requirements.txt
 COPY ./src ./src
 COPY ./start.sh ./start.sh
+RUN chmod 777 start.sh
 
-CMD ["chmod", "777", "start.sh"]
+# CMD ["chmod", "777", "start.sh"]
