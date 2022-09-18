@@ -1,6 +1,7 @@
 <h1 align="center">payment Django+Stripe</h1>
 
 <a href="https://github.com/airyou-code/Notification_service" target="_blank">github</a> 
+<a href="https://testappairyou.herokuapp.com/api" target="_blank">Test app</a> 
 
 ## Description
 - The project was created as a test task.
@@ -11,6 +12,10 @@
 - RestAPI
 - Postgres
 - Docker
+
+# Test app
+The application is running on Heroku
+- `https://testappairyou.herokuapp.com`
 
 # Installation
 Need to install docker-compose!!!
