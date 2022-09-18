@@ -14,7 +14,7 @@ class SuccessView(TemplateView):
     template_name = "main/success.html"
 
 class IndexView(TemplateView):
-    template_name = "main/success.html"
+    template_name = "main/index.html"
 
 class CancelView(TemplateView):
     template_name = "main/cancel.html"
