@@ -12,7 +12,8 @@ DOMAIN = settings.DOMAIN
 
 class SuccessView(TemplateView):
     template_name = "main/success.html"
-Class indexView(TemplateView):
+
+class IndexView(TemplateView):
     template_name = "main/success.html"
 
 class CancelView(TemplateView):
