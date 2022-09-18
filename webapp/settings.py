@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
-from KEY import STRIPE_SECRET_KEY, STRIPE_PUBLISH_KEY
 import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,15 +24,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-pdc@kjhi6^!&$y%ebab3)#75i1cql^x%#(rspm=9yzpscnd5=-'
 
-STRIPE_SECRET_KEY = STRIPE_SECRET_KEY
-STRIPE_PUBLISH_KEY = STRIPE_PUBLISH_KEY
+STRIPE_SECRET_KEY = os.environ['STRIPE_SECRET_KEY']
+STRIPE_PUBLISH_KEY = os.environ['STRIPE_PUBLISH_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
-DOMAIN = "http://127.0.0.1:8000"
+DOMAIN = "https://testappairyou.herokuapp.com/"
 
 
 # Application definition
