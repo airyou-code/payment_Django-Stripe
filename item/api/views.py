@@ -89,8 +89,8 @@ class BuyOrderAPI(View):
                 "product_id": order.id
             },
             mode='payment',
-            success_url=DOMAIN + '/success/',
-            cancel_url=DOMAIN + '/cancel/',
+            success_url=DOMAIN + 'success/',
+            cancel_url=DOMAIN + 'cancel/',
         )
         
         return JsonResponse({
