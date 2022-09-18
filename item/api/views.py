@@ -52,8 +52,8 @@ class BuyAPI(View):
                 "product_id": product.id
             },
             mode='payment',
-            success_url=DOMAIN + '/success/',
-            cancel_url=DOMAIN + '/cancel/',
+            success_url=DOMAIN + 'success/',
+            cancel_url=DOMAIN + 'cancel/',
         )
         return JsonResponse({
             'id': checkout_session.id
