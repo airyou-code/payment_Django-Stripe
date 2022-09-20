@@ -1,6 +1,6 @@
 <h1 align="center">payment Django+Stripe</h1>
 
-<a href="https://github.com/airyou-code/Notification_service" target="_blank">github</a> 
+<a href="https://github.com/airyou-code/payment_Django-Stripe" target="_blank">github</a> 
 <a href="https://testappairyou.herokuapp.com" target="_blank">Test app</a> 
 
 ## Description
