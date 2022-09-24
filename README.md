@@ -4,7 +4,6 @@
 <a href="https://testappairyou.herokuapp.com" target="_blank">Test app</a> 
 
 ## Description
-- The project was created as a test task.
 - The task is to implement a payment system for goods using Stripe
 
 # Stack technology
