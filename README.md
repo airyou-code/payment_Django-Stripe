@@ -3,7 +3,7 @@
 <a href="https://github.com/airyou-code/payment_Django-Stripe" target="_blank">github</a> 
 
 ## Description
-- The task is to implement a payment system for goods using Stripe
+- The project is to implement a payment system for goods using Stripe
 
 # Stack technology
 - Django
